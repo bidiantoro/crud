@@ -1,0 +1,33 @@
+<form name="form1" id="form1">
+    <table width="25%" border="0">
+        <tr> 
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr> 
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr> 
+            <td>Mobile</td>
+            <td><input type="text" name="mobile"></td>
+        </tr>
+        <tr> 
+            <td></td>
+            <td><input type="submit" name="Submit" value="Add"></td>
+        </tr>
+    </table>
+</form>
+<script>
+    
+    var form_el = document.getElementById("form1");
+
+form_el.addEventListener("submit", function(evt) {
+    evt.preventDefault();
+    fillArray();
+});
+
+function fillArray() {
+    console.log("test");
+}
+    </script>
